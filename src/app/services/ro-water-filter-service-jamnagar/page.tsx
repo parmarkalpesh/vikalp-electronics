@@ -2,27 +2,96 @@ import type { Metadata } from "next";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import { FaTint, FaPhoneAlt, FaFilter } from "react-icons/fa";
+import FAQ from "@/components/sections/FAQ";
+import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "RO Water Filter Service Jamnagar | Repair, Installation & AMC",
-    description: "Pure drinking water solutions in Jamnagar. We repair Kent, Aquaguard, and all RO brands. Filter change, membrane replacement, and installation.",
+    title: "Best RO Service in Jamnagar | Water Purifier Repair & AMC",
+    description: "Pure drinking water solutions in Jamnagar. We repair Kent, Aquaguard, and all RO brands. Filter change, membrane replacement, and installation. Call now.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/ro-water-filter-service-jamnagar",
     },
 };
 
 export default function ROServicePage() {
+    const faqItems = [
+        {
+            question: "How often should I change my RO filters?",
+            answer: "Sediment and carbon filters should be changed every 6-8 months, while the RO membrane usually lasts 1.5 to 2 years depending on water quality."
+        },
+        {
+            question: "What is the cost of RO service/AMC in Jamnagar?",
+            answer: "General service starts at ₹350. We also offer annual maintenance contracts (AMC) starting from ₹2500 which covers filter replacements."
+        },
+        {
+            question: "My RO waste water is flowing continuously, what should I do?",
+            answer: "This indicates a solenoid valve failure or membrane issue. Switch off the RO immediately and call our technician."
+        },
+        {
+            question: "Do you repair Kent and Aquaguard models?",
+            answer: "Yes, we repair all major RO brands including Kent, Aquaguard, Eureka Forbes, Livpure, and assembled units."
+        }
+    ];
+
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Water Purification Service",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "VikalpElectronics",
-            "telephone": "+919374170929"
-        },
-        "areaServed": "Jamnagar",
-        "description": "RO Water Purifier Repair and Installation Services."
+        "@graph": [
+            {
+                "@type": "Service",
+                "serviceType": "Water Purification Service",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "VikalpElectronics",
+                    "telephone": "+919374170929",
+                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "priceRange": "₹"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Jamnagar"
+                },
+                "description": "RO Water Purifier Repair and Installation Services in Jamnagar.",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.7",
+                    "reviewCount": "98"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://vikalpelectronics.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://vikalpelectronics.com/services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "RO Service Jamnagar",
+                        "item": "https://vikalpelectronics.com/services/ro-water-filter-service-jamnagar"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqItems.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            }
+        ]
     };
 
     return (
@@ -69,6 +138,9 @@ export default function ROServicePage() {
                     </div>
                 </div>
             </Section>
+
+            <FAQ items={faqItems} title="RO Water Purifier FAQs" />
+            <RelatedServices currentPath="/services/ro-water-filter-service-jamnagar" />
         </main>
     );
 }

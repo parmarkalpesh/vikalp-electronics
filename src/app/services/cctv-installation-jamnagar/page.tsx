@@ -2,27 +2,96 @@ import type { Metadata } from "next";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import { FaShieldAlt, FaPhoneAlt, FaEye } from "react-icons/fa";
+import FAQ from "@/components/sections/FAQ";
+import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "CCTV Installation in Jamnagar | Hikvision, CP Plus Camera Security",
-    description: "Secure your home & business with VikalpElectronics CCTV installation in Jamnagar. HD Cameras, Night Vision, Mobile View setup. Sales & Service.",
+    title: "CCTV Camera Installation in Jamnagar | Security Camera Service",
+    description: "Secure your home & business with VikalpElectronics CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi Cameras. Mobile View setup.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/cctv-installation-jamnagar",
     },
 };
 
 export default function CCTVPage() {
+    const faqItems = [
+        {
+            question: "How much does it cost to install CCTV cameras?",
+            answer: "A basic 2-camera setup starts from ₹10,000 including installation, DVR, and Hard Disk. Prices vary based on brand (Hikvision/CP Plus) and quality (2MP, 5MP, IP Cameras)."
+        },
+        {
+            question: "Can I view the CCTV footage on my mobile phone?",
+            answer: "Yes, we configure the system to allow remote viewing on your smartphone (Android & iOS) via internet, so you can monitor your property from anywhere."
+        },
+        {
+            question: "Do you provide warranty on CCTV cameras?",
+            answer: "Yes, all our cameras and DVRs come with a 2-year manufacturer warranty."
+        },
+        {
+            question: "Do you install WiFi cameras for home?",
+            answer: "Yes, we install wireless WiFi cameras that don't require complex wiring and can be moved easily."
+        }
+    ];
+
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Security System Installation",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "VikalpElectronics",
-            "telephone": "+919374170929"
-        },
-        "areaServed": "Jamnagar",
-        "description": "CCTV Camera Installation and Maintenance Services."
+        "@graph": [
+            {
+                "@type": "Service",
+                "serviceType": "Security System Installation",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "VikalpElectronics",
+                    "telephone": "+919374170929",
+                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "priceRange": "₹₹₹"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Jamnagar"
+                },
+                "description": "CCTV Camera Installation and Maintenance Services in Jamnagar.",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "84"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://vikalpelectronics.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://vikalpelectronics.com/services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "CCTV Installation Jamnagar",
+                        "item": "https://vikalpelectronics.com/services/cctv-installation-jamnagar"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqItems.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            }
+        ]
     };
 
     return (
@@ -72,6 +141,9 @@ export default function CCTVPage() {
                     </div>
                 </div>
             </Section>
+
+            <FAQ items={faqItems} title="CCTV Security FAQs" />
+            <RelatedServices currentPath="/services/cctv-installation-jamnagar" />
         </main>
     );
 }

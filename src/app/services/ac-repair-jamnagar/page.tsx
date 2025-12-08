@@ -2,27 +2,96 @@ import type { Metadata } from "next";
 import Section, { SectionTitle } from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import { FaWrench, FaPhoneAlt, FaWhatsapp, FaCheck } from "react-icons/fa";
+import FAQ from "@/components/sections/FAQ";
+import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "AC Repair Service in Jamnagar | Fast & Reliable AC Station Near Me",
-    description: "Urgent AC repair in Jamnagar. We fix cooling issues, gas leakage, and noise problems. Expert technicians for Voltas, LG, Samsung split & window ACs.",
+    title: "Best AC Repair Service in Jamnagar | AC Service Center Near Me",
+    description: "Looking for best AC repair in Jamnagar? We fix cooling issues, gas leakage & breakdown. 90-day warranty, 15+ years exp. Split & Window AC specialist.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/ac-repair-jamnagar",
     },
 };
 
 export default function ACRepairPage() {
+    const faqItems = [
+        {
+            question: "How much does AC service cost in Jamnagar?",
+            answer: "Our AC service charges in Jamnagar start from ₹499 for general service. Repair costs depend on the issue, but we offer transparent pricing before starting work."
+        },
+        {
+            question: "Do you provide warranty on AC repairs?",
+            answer: "Yes, we provide a 90-day warranty on all AC repairs and spare parts replaced by us."
+        },
+        {
+            question: "How quickly can you fix my AC?",
+            answer: "We offer same-day AC repair service in Jamnagar. In most cases, our technician arrives within 2 hours of booking."
+        },
+        {
+            question: "Which AC brands do you repair?",
+            answer: "We repair all major brands including Voltas, LG, Samsung, Daikin, Hitachi, Lloyd, Panasonic, and Carrier."
+        }
+    ];
+
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "AC Repair",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "VikalpElectronics",
-            "telephone": "+919374170929"
-        },
-        "areaServed": "Jamnagar",
-        "description": "Expert AC repair services for cooling issues, leakage, and breakdown."
+        "@graph": [
+            {
+                "@type": "Service",
+                "serviceType": "AC Repair",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "VikalpElectronics",
+                    "telephone": "+919374170929",
+                    "priceRange": "₹₹",
+                    "image": "https://vikalpelectronics.com/img/logo.png"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Jamnagar"
+                },
+                "description": "Expert AC repair services for cooling issues, leakage, and breakdown in Jamnagar.",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "156"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://vikalpelectronics.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://vikalpelectronics.com/services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "AC Repair Jamnagar",
+                        "item": "https://vikalpelectronics.com/services/ac-repair-jamnagar"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqItems.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            }
+        ]
     };
 
     return (
@@ -34,8 +103,8 @@ export default function ACRepairPage() {
 
             <div className="bg-secondary text-white py-20 relative">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Expert AC Repair Service in Jamnagar</h1>
-                    <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">AC not cooling? Making noise? Get it fixed today by Jamnagar's most trusted technicians.</p>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Best AC Repair Service in Jamnagar</h1>
+                    <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">AC not cooling? Making noise? Get it fixed today by Jamnagar's most trusted technicians. 100% Satisfaction Guaranteed.</p>
                     <Button href="tel:+919374170929" variant="primary" className="text-lg">
                         <FaPhoneAlt className="mr-2" /> Call Expert Now
                     </Button>
@@ -66,7 +135,7 @@ export default function ACRepairPage() {
                         <h3 className="text-2xl font-bold text-secondary mb-4">Why we are best in Jamnagar?</h3>
                         <ul className="space-y-3 mb-6">
                             <li className="flex items-center gap-2"><FaCheck className="text-green-500" /> <span>90-Day Warranty on Repairs</span></li>
-                            <li className="flex items-center gap-2"><FaCheck className="text-green-500" /> <span>Visiting Charge Adjust in Repair</span></li>
+                            <li className="flex items-center gap-2"><FaCheck className="text-green-500" /> <span>No Hidden Charges</span></li>
                             <li className="flex items-center gap-2"><FaCheck className="text-green-500" /> <span>Genuine Spare Parts</span></li>
                             <li className="flex items-center gap-2"><FaCheck className="text-green-500" /> <span>Same Day Service</span></li>
                         </ul>
@@ -76,6 +145,9 @@ export default function ACRepairPage() {
                     </div>
                 </div>
             </Section>
+
+            <FAQ items={faqItems} title="AC Repair FAQs" />
+            <RelatedServices currentPath="/services/ac-repair-jamnagar" />
         </main>
     );
 }

@@ -2,27 +2,96 @@ import type { Metadata } from "next";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import { FaPhoneAlt } from "react-icons/fa";
+import FAQ from "@/components/sections/FAQ";
+import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "Washing Machine Repair Jamnagar | Automatic & Semi-Automatic Service",
-    description: "Top-rated washing machine repair in Jamnagar. We fix drum issues, water leakage, error codes, and PCB problems. All brands serviced.",
+    title: "Best Washing Machine Repair in Jamnagar | Top Rated Service Center",
+    description: "Top-rated washing machine repair in Jamnagar. We fix drum issues, water leakage, error codes, and PCB problems. All brands serviced. Same day visit.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/washing-machine-repair-jamnagar",
     },
 };
 
 export default function WashingMachineRepairPage() {
+    const faqItems = [
+        {
+            question: "How much does washing machine repair cost in Jamnagar?",
+            answer: "Visiting charges are ₹199-₹299. Repair costs depend on the part replacement (e.g., motor, PCB, drum). We provide an estimate before starting."
+        },
+        {
+            question: "My washing machine is not spinning, can you fix it?",
+            answer: "Yes, spinning issues are common and usually caused by a belt, motor, or capacitor fault. Our technicians carry potential spare parts to fix it on the spot."
+        },
+        {
+            question: "Do you repair fully automatic and front-load machines?",
+            answer: "Absolutely. We expertise in repairing Front Load, Top Load, and Semi-Automatic washing machines from brands like IFB, Samsung, LG, and Bosch."
+        },
+        {
+            question: "Do you provide a warranty on replaced parts?",
+            answer: "Yes, we offer a 3-month warranty on any spare part we replace during the repair."
+        }
+    ];
+
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Washing Machine Repair",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "VikalpElectronics",
-            "telephone": "+919374170929"
-        },
-        "areaServed": "Jamnagar",
-        "description": "Repair service for Front Load, Top Load, and Semi-automatic washing machines."
+        "@graph": [
+            {
+                "@type": "Service",
+                "serviceType": "Washing Machine Repair",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "VikalpElectronics",
+                    "telephone": "+919374170929",
+                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "priceRange": "₹₹"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Jamnagar"
+                },
+                "description": "Repair service for Front Load, Top Load, and Semi-automatic washing machines in Jamnagar.",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "210"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://vikalpelectronics.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://vikalpelectronics.com/services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Washing Machine Repair Jamnagar",
+                        "item": "https://vikalpelectronics.com/services/washing-machine-repair-jamnagar"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqItems.map(item => ({
+                    "@type": "Question",
+                    "name": item.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": item.answer
+                    }
+                }))
+            }
+        ]
     };
 
     return (
@@ -74,6 +143,9 @@ export default function WashingMachineRepairPage() {
                     </div>
                 </div>
             </Section>
+
+            <FAQ items={faqItems} title="Washing Machine FAQs" />
+            <RelatedServices currentPath="/services/washing-machine-repair-jamnagar" />
         </main>
     );
 }

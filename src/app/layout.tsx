@@ -10,11 +10,21 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-display" });
 export const metadata: Metadata = {
   metadataBase: new URL('https://vikalpelectronics.com'),
   title: {
-    default: "VikalpElectronics - Best AC & Home Appliance Repair in Jamnagar",
-    template: "%s | VikalpElectronics Jamnagar",
+    default: "Best AC Repair & Home Appliance Service in Jamnagar | VikalpElectronics",
+    template: "%s | Best Service in Jamnagar - VikalpElectronics",
   },
-  description: "Expert AC installation, fridge repair, washing machine service, and CCTV installation in Jamnagar. 15+ years of experience. Trusted local technicians. Call 9374170929.",
-  keywords: ["AC installation Jamnagar", "AC repair Jamnagar", "Fridge repair Jamnagar", "Washing machine repair Jamnagar", "CCTV installation Jamnagar", "RO service Jamnagar", "VikalpElectronics"],
+  description: "Looking for best AC service in Jamnagar? VikalpElectronics offers expert AC repair, Fridge, Washing Machine & RO service. 15+ Yrs Exp. Same Day Visit.",
+  keywords: [
+    "AC service in Jamnagar",
+    "Best AC repair Jamnagar",
+    "Home appliance repair Jamnagar",
+    "Fridge repair near me",
+    "Washing machine service Jamnagar",
+    "CCTV camera installation Jamnagar",
+    "RO filter service Jamnagar",
+    "VikalpElectronics",
+    "Urban Company alternative Jamnagar"
+  ],
   authors: [{ name: "VikalpElectronics" }],
   creator: "VikalpElectronics",
   publisher: "VikalpElectronics",
@@ -29,8 +39,8 @@ export const metadata: Metadata = {
     apple: '/img/logo.png',
   },
   openGraph: {
-    title: "VikalpElectronics - Expert Home Appliance Repair in Jamnagar",
-    description: "Fast & reliable AC, Fridge, Washing Machine repair services in Jamnagar. Certified technicians & genuine parts.",
+    title: "Best AC & Home Appliance Repair in Jamnagar | VikalpElectronics",
+    description: "Get expert repair for AC, Fridge, Washing Machine & RO in Jamnagar. 90-day warranty, genuine parts, and same-day service. Book now!",
     url: 'https://vikalpelectronics.com',
     siteName: 'VikalpElectronics',
     locale: 'en_IN',
@@ -38,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "VikalpElectronics - Jamnagar's Trusted Appliance Repair",
-    description: "Need AC or Fridge repair in Jamnagar? Contact VikalpElectronics for quick & affordable service.",
+    title: "VikalpElectronics - #1 Appliance Repair in Jamnagar",
+    description: "Expert AC, Fridge & Washing Machine repair in Jamnagar. Fast service, affordable rates. Call 9374170929.",
   },
   robots: {
     index: true,
