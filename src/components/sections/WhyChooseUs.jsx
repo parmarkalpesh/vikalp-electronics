@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent/10 blur-3xl"></div>
 
             <div className="container mx-auto px-4 relative z-10">
-                <SectionTitle title="Why Choose Vikalp Electronics?" subtitle="Our Promise" light={true} />
+                <SectionTitle title="Why Choose Vikalp Electric & Refrigeration?" subtitle="Our Promise" light={true} />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => (

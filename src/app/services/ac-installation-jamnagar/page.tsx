@@ -5,7 +5,7 @@ import { FaCheckCircle, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 export const metadata: Metadata = {
     title: "AC Installation in Jamnagar | Best AC Fitting & Service Near Me",
-    description: "Professional AC installation service in Jamnagar. Split & Window AC fitting by expert technicians. Affordable rates, same-day service. Call VikalpElectronics.",
+    description: "Professional AC installation service in Jamnagar. Split & Window AC fitting by expert technicians. Affordable rates, same-day service. Call Vikalp Electric & Refrigeration.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/ac-installation-jamnagar",
     },
@@ -18,7 +18,7 @@ export default function ACInstallationPage() {
         "serviceType": "AC Installation",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "VikalpElectronics",
+            "name": "Vikalp Electric & Refrigeration",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Jamnagar",
@@ -70,9 +70,9 @@ export default function ACInstallationPage() {
 
                     {/* Left Content */}
                     <div className="lg:col-span-2">
-                        <h2 className="text-3xl font-bold text-secondary mb-6">Why Choose VikalpElectronics for AC Installation?</h2>
+                        <h2 className="text-3xl font-bold text-secondary mb-6">Why Choose Vikalp Electric & Refrigeration for AC Installation?</h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            When you buy a new Air Conditioner, proper installation is crucial for its cooling efficiency and lifespan. At VikalpElectronics, we provide <strong>premium AC installation services in Jamnagar</strong> with over 15 years of experience. Our certified technicians ensure that your Split or Window AC is installed with precision, preventing gas leaks and vibration issues.
+                            When you buy a new Air Conditioner, proper installation is crucial for its cooling efficiency and lifespan. At Vikalp Electric & Refrigeration, we provide <strong>premium AC installation services in Jamnagar</strong> with over 15 years of experience. Our certified technicians ensure that your Split or Window AC is installed with precision, preventing gas leaks and vibration issues.
                         </p>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Whether you are in <strong>Patel Colony, Digjam Circle, Gokul Nagar, or near Bedi Gate</strong>, our team reaches your location promptly. We handle everything from copper piping and outdoor unit mounting to gas pressure checking.
@@ -97,7 +97,7 @@ export default function ACInstallationPage() {
                         <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 my-8">
                             <h3 className="text-xl font-bold text-secondary mb-3">Service Areas in Jamnagar</h3>
                             <p className="text-gray-600">
-                                We serve all major areas including Raj Park, Valkeshwari, Saru Section, Limda Lane, Khodiyar Colony, Lal Bunglow, and Reliance Road. Search for "AC installation near me" and you'll find VikalpElectronics ready to serve.
+                                We serve all major areas including Raj Park, Valkeshwari, Saru Section, Limda Lane, Khodiyar Colony, Lal Bunglow, and Reliance Road. Search for "AC installation near me" and you'll find Vikalp Electric & Refrigeration ready to serve.
                             </p>
                         </div>
                     </div>

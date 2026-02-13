@@ -56,7 +56,7 @@ export default function ServicesPage() {
                         Our Premium Services in Jamnagar
                     </h1>
                     <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-                        From AC installation to CCTV security, VikalpElectronics offers trusted home appliance repair and maintenance solutions.
+                        From AC installation to CCTV security, Vikalp Electric & Refrigeration offers trusted home appliance repair and maintenance solutions.
                     </p>
                 </div>
             </div>

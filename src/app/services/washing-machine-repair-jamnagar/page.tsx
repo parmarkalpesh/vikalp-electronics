@@ -41,7 +41,7 @@ export default function WashingMachineRepairPage() {
                 "serviceType": "Washing Machine Repair",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "VikalpElectronics",
+                    "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
                     "image": "https://vikalpelectronics.com/img/logo.png",
                     "priceRange": "₹₹"
@@ -106,7 +106,7 @@ export default function WashingMachineRepairPage() {
                     <h1 className="text-4xl md:text-5xl font-display font-bold text-secondary mb-6">Washing Machine Repair in Jamnagar</h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
                         Facing issues like "Washing machine not spinning", "Water not draining", or "Loud noise"?
-                        VikalpElectronics is your local expert for quick and effective repairs.
+                        Vikalp Electric & Refrigeration is your local expert for quick and effective repairs.
                     </p>
                     <Button href="tel:+919374170929" variant="primary" className="text-lg px-10">
                         <FaPhoneAlt className="mr-2" /> Book Technician

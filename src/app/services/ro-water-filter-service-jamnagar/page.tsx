@@ -41,7 +41,7 @@ export default function ROServicePage() {
                 "serviceType": "Water Purification Service",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "VikalpElectronics",
+                    "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
                     "image": "https://vikalpelectronics.com/img/logo.png",
                     "priceRange": "₹"

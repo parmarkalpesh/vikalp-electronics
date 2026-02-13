@@ -3,8 +3,8 @@ import Section from "@/components/ui/Section";
 import { FaUserTie, FaAward, FaHistory } from "react-icons/fa";
 
 export const metadata: Metadata = {
-    title: "About VikalpElectronics | 15+ Years of Appliance Repair in Jamnagar",
-    description: "Learn about VikalpElectronics, Jamnagar's most trusted home appliance repair service since 2010. Expert team, genuine parts, and customer-first approach.",
+    title: "About Vikalp Electric & Refrigeration | 15+ Years of Appliance Repair in Jamnagar",
+    description: "Learn about Vikalp Electric & Refrigeration, Jamnagar's most trusted home appliance repair service since 2010. Expert team, genuine parts, and customer-first approach.",
     alternates: {
         canonical: "https://vikalpelectronics.com/about",
     },
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <main>
             <div className="bg-secondary text-white py-20">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">About VikalpElectronics</h1>
+                    <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">About Vikalp Electric & Refrigeration</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         Serving Jamnagar with honesty, expertise, and dedication for over 15 years.
                     </p>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold text-secondary mb-6">Our Story</h2>
                         <p className="text-gray-600 mb-4 leading-relaxed">
-                            Founded in 2010, <strong>VikalpElectronics</strong> started as a small repair shop in Gokul Nagar, Jamnagar. Over the years, we have grown into a full-service home appliance solution provider, trusted by thousands of households and businesses across the city.
+                            Founded in 2010, <strong>Vikalp Electric & Refrigeration</strong> started as a small repair shop in Gokul Nagar, Jamnagar. Over the years, we have grown into a full-service home appliance solution provider, trusted by thousands of households and businesses across the city.
                         </p>
                         <p className="text-gray-600 mb-4 leading-relaxed">
                             Our mission is simple: <strong>To provide fast, reliable, and affordable repair services</strong> so that you don't feature any inconvenience in your daily life. Whether it's a scorching summer day ensuring your AC works perfectly, or fixing your refrigerator to save your food, we are always just a call away.

@@ -43,7 +43,7 @@ export default function About() {
                             center={false}
                         />
                         <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                            Since our inception, Vikalp Electronics has been dedicated to providing top-notch installation and repair services in Jamnagar. We understand how crucial your home appliances and security systems are to your daily life.
+                            Since our inception, Vikalp Electric & Refrigeration has been dedicated to providing top-notch installation and repair services in Jamnagar. We understand how crucial your home appliances and security systems are to your daily life.
                         </p>
                         <p className="text-gray-600 text-lg leading-relaxed mb-8">
                             Our team of certified professionals is committed to delivering quality workmanship with speed and reliability. Whether it's securing your premises with CCTV or keeping your home cool with expert AC maintenance, we are your go-to experts.

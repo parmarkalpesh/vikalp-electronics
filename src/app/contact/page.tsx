@@ -4,8 +4,8 @@ import Button from "@/components/ui/Button";
 import { FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 export const metadata: Metadata = {
-    title: "Contact VikalpElectronics | AC Repair Number Jamnagar",
-    description: "Contact VikalpElectronics for AC installation, fridge repair, and CCTV service in Jamnagar. Call 9374170929 or visit our shop at Gokul Nagar.",
+    title: "Contact Vikalp Electric & Refrigeration | AC Repair Number Jamnagar",
+    description: "Contact Vikalp Electric & Refrigeration for AC installation, fridge repair, and CCTV service in Jamnagar. Call 9374170929 or visit our shop at Gokul Nagar.",
     alternates: {
         canonical: "https://vikalpelectronics.com/contact",
     },
@@ -69,13 +69,13 @@ export default function ContactPage() {
                     {/* Map */}
                     <div className="h-[400px] bg-gray-200 rounded-2xl overflow-hidden shadow-sm border border-gray-300">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.4452943249553!2d70.04027487475359!3d22.449894837457492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395715fe5a235cab%3A0x253906ad36e95d77!2sVikalp%20Electric%20%26%20Electronic!5e0!3m2!1sen!2sin!4v1765037902753!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.4452943249553!2d70.04027487475359!3d22.449894837457492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395715fe5a235cab%3A0x253906ad36e95d77!2sVikalp%20Electric%20%26%20Refrigeration!5e0!3m2!1sen!2sin!4v1765037902753!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
                             allowFullScreen={true}
                             loading="lazy"
-                            title="VikalpElectronics Location Map"
+                            title="Vikalp Electric & Refrigeration Location Map"
                         ></iframe>
                     </div>
 

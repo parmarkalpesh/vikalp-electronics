@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Company Info */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-6 text-white">Vikalp<span className="text-primary">Electronics</span></h3>
+                        <h3 className="text-2xl font-bold mb-6 text-white">Vikalp<span className="text-primary">Electric & Refrigeration</span></h3>
                         <p className="text-gray-400 mb-6 leading-relaxed">
                             Your trusted partner for Electronics & Refrigeration services. 15+ years of delivering excellence in Jamnagar.
                         </p>
@@ -66,7 +66,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                    <p>&copy; {new Date().getFullYear()} Vikalp Electronics. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Vikalp Electric & Refrigeration. All rights reserved.</p>
                 </div>
             </div>
         </footer>

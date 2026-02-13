@@ -31,7 +31,7 @@ export default function Navbar() {
 
                         <Image
                             src="/img/logo.png"
-                            alt="Vikalp Electronics"
+                            alt="Vikalp Electric & Refrigeration"
                             fill
                             className="object-contain"
                             priority

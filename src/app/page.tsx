@@ -4,6 +4,8 @@ import Services from "@/components/sections/Services";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
+import Products from "@/components/sections/Products";
+import SEOKeywords from "@/components/sections/SEOKeywords";
 
 import Clients from "@/components/sections/Clients";
 
@@ -11,7 +13,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "VikalpElectronics",
+    "name": "Vikalp Electric & Refrigeration",
     "image": "https://vikalpelectronics.com/img/logo.png", // Ensure this exists or use a generic one
     "@id": "https://vikalpelectronics.com",
     "url": "https://vikalpelectronics.com",
@@ -42,6 +44,37 @@ export default function Home() {
       "opens": "09:00",
       "closes": "21:00"
     },
+    "areaServed": {
+      "@type": "City",
+      "name": "Jamnagar"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AC Repair Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AC Repair & Service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AC Gas Charging"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AC Installation"
+          }
+        }
+      ]
+    },
     "sameAs": [
       "https://facebook.com/vikalpelectronics",
       "https://instagram.com/vikalpelectronics"
@@ -59,8 +92,10 @@ export default function Home() {
       <Clients />
       <About />
       <Services />
+      <Products />
       <WhyChooseUs />
       <Testimonials />
+      <SEOKeywords />
       <Contact />
     </main>
   );

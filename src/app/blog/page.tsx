@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaCalendarAlt, FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
-    title: "VikalpElectronics Blog | Home Appliance Maintenance Tips",
+    title: "Vikalp Electric & Refrigeration Blog | Home Appliance Maintenance Tips",
     description: "Read expert tips on maintaining your AC, fridge, and washing machine. Best advice from Jamnagar's top appliance technicians.",
     alternates: {
         canonical: "https://vikalpelectronics.com/blog",
@@ -38,7 +38,7 @@ export default function BlogPage() {
             <div className="bg-secondary text-white py-20">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Blog</h1>
-                    <p className="text-gray-300">Expert tips & news from VikalpElectronics</p>
+                    <p className="text-gray-300">Expert tips & news from Vikalp Electric & Refrigeration</p>
                 </div>
             </div>
 

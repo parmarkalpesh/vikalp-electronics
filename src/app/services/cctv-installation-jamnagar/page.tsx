@@ -7,7 +7,7 @@ import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
     title: "CCTV Camera Installation in Jamnagar | Security Camera Service",
-    description: "Secure your home & business with VikalpElectronics CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi Cameras. Mobile View setup.",
+    description: "Secure your home & business with Vikalp Electric & Refrigeration CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi Cameras. Mobile View setup.",
     alternates: {
         canonical: "https://vikalpelectronics.com/services/cctv-installation-jamnagar",
     },
@@ -41,7 +41,7 @@ export default function CCTVPage() {
                 "serviceType": "Security System Installation",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "VikalpElectronics",
+                    "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
                     "image": "https://vikalpelectronics.com/img/logo.png",
                     "priceRange": "₹₹₹"

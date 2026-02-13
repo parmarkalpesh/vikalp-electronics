@@ -12,7 +12,7 @@ const testimonials = [
     {
         name: "Priya Patel",
         role: "Business Owner",
-        review: "We hired Vikalp Electronics for our office CCTV setup. Clean installation and good after-sales support.",
+        review: "We hired Vikalp Electric & Refrigeration for our office CCTV setup. Clean installation and good after-sales support.",
         rating: 5
     },
     {

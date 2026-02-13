@@ -41,7 +41,7 @@ export default function ACRepairPage() {
                 "serviceType": "AC Repair",
                 "provider": {
                     "@type": "LocalBusiness",
-                    "name": "VikalpElectronics",
+                    "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
                     "priceRange": "₹₹",
                     "image": "https://vikalpelectronics.com/img/logo.png"
