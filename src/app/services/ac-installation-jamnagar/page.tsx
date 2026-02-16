@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "AC Installation in Jamnagar | Best AC Fitting & Service Near Me",
     description: "Professional AC installation service in Jamnagar. Split & Window AC fitting by expert technicians. Affordable rates, same-day service. Call Vikalp Electric & Refrigeration.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/ac-installation-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/ac-installation-jamnagar",
     },
 };
 

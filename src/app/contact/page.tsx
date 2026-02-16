@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "Contact Vikalp Electric & Refrigeration | AC Repair Number Jamnagar",
     description: "Contact Vikalp Electric & Refrigeration for AC installation, fridge repair, and CCTV service in Jamnagar. Call 9374170929 or visit our shop at Gokul Nagar.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/contact",
+        canonical: "https://vikalp-electronics.vercel.app/contact",
     },
 };
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                                     <FaEnvelope className="text-2xl text-gray-500 mt-1" />
                                     <div>
                                         <h3 className="font-bold text-gray-800">Email</h3>
-                                        <a href="mailto:vikalpelectronicsofficial@gmail.com" className="text-gray-600 hover:text-primary transition-colors">vikalpelectronicsofficial@gmail.com</a>
+                                        <a href="mailto:vikalpjamnagar@gmail.com" className="text-gray-600 hover:text-primary transition-colors">vikalpjamnagar@gmail.com</a>
                                     </div>
                                 </div>
                             </div>

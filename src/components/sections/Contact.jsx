@@ -44,8 +44,8 @@ export default function Contact() {
         e.preventDefault();
         if (validateForm()) {
             const phoneNumber = "919374170929";
-            const text = `Hello, I need *${formData.service}*.%0A%0A*My Details:*%0AName: ${formData.name}%0APhone: ${formData.phone}%0A%0A*Issue:*%0A${formData.message}`;
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+            const message = `Hello, I need *${formData.service}*.\n\n*My Details:*\nName: ${formData.name}\nPhone: ${formData.phone}\n\n*Issue:*\n${formData.message}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
     };

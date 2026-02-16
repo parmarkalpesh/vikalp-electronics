@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "About Vikalp Electric & Refrigeration | 15+ Years of Appliance Repair in Jamnagar",
     description: "Learn about Vikalp Electric & Refrigeration, Jamnagar's most trusted home appliance repair service since 2010. Expert team, genuine parts, and customer-first approach.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/about",
+        canonical: "https://vikalp-electronics.vercel.app/about",
     },
 };
 

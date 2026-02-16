@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "CCTV Camera Installation in Jamnagar | Security Camera Service",
     description: "Secure your home & business with Vikalp Electric & Refrigeration CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi Cameras. Mobile View setup.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/cctv-installation-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/cctv-installation-jamnagar",
     },
 };
 
@@ -43,7 +43,7 @@ export default function CCTVPage() {
                     "@type": "LocalBusiness",
                     "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
-                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "image": "https://vikalp-electronics.vercel.app/img/logo.png",
                     "priceRange": "₹₹₹"
                 },
                 "areaServed": {
@@ -64,19 +64,19 @@ export default function CCTVPage() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://vikalpelectronics.com"
+                        "item": "https://vikalp-electronics.vercel.app"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://vikalpelectronics.com/services"
+                        "item": "https://vikalp-electronics.vercel.app/services"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "CCTV Installation Jamnagar",
-                        "item": "https://vikalpelectronics.com/services/cctv-installation-jamnagar"
+                        "item": "https://vikalp-electronics.vercel.app/services/cctv-installation-jamnagar"
                     }
                 ]
             },

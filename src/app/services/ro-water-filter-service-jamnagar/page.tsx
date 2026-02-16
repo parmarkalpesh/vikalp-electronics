@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best RO Service in Jamnagar | Water Purifier Repair & AMC",
     description: "Pure drinking water solutions in Jamnagar. We repair Kent, Aquaguard, and all RO brands. Filter change, membrane replacement, and installation. Call now.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/ro-water-filter-service-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/ro-water-filter-service-jamnagar",
     },
 };
 
@@ -43,7 +43,7 @@ export default function ROServicePage() {
                     "@type": "LocalBusiness",
                     "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
-                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "image": "https://vikalp-electronics.vercel.app/img/logo.png",
                     "priceRange": "₹"
                 },
                 "areaServed": {
@@ -64,19 +64,19 @@ export default function ROServicePage() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://vikalpelectronics.com"
+                        "item": "https://vikalp-electronics.vercel.app"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://vikalpelectronics.com/services"
+                        "item": "https://vikalp-electronics.vercel.app/services"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "RO Service Jamnagar",
-                        "item": "https://vikalpelectronics.com/services/ro-water-filter-service-jamnagar"
+                        "item": "https://vikalp-electronics.vercel.app/services/ro-water-filter-service-jamnagar"
                     }
                 ]
             },

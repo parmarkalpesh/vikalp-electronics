@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vikalpelectronics.com'),
+  metadataBase: new URL('https://vikalp-electronics.vercel.app'),
   title: {
     default: "Best AC Repair & Home Appliance Service in Jamnagar | Vikalp Electric & Refrigeration",
     template: "%s | Best Service in Jamnagar - Vikalp Electric & Refrigeration",
   },
-  description: "Looking for best AC service in Jamnagar? Vikalp Electric & Refrigeration offers 24/7 expert AC repair, gas charging, installation & servicing for Split/Window ACs of all brands (Voltas, LG, Samsung, Daikin, etc.).",
+  description: "Looking for best AC service in Jamnagar? Vikalp Electric & Refrigeration offers 24/7 expert AC repair, gas charging, installation & servicing for Split/Window ACs of all brands. Call +919374170929.",
   keywords: [
     "AC service in Jamnagar",
     "Best AC repair Jamnagar",
@@ -67,15 +67,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best AC & Home Appliance Repair in Jamnagar | Vikalp Electric & Refrigeration",
     description: "Expert AC Repair, Gas Charging & Installation in Jamnagar. 24/7 Service for all brands. Call +919374170929 for same-day visit.",
-    url: 'https://vikalpelectronics.com',
+    url: 'https://vikalp-electronics.vercel.app',
     siteName: 'Vikalp Electric & Refrigeration',
     locale: 'en_IN',
     type: 'website',
+    images: [
+      {
+        url: '/img/hero-image.jpg', // Ensure this or a relevant image exists
+        width: 1200,
+        height: 630,
+        alt: 'Vikalp Electric & Refrigeration Team',
+      }
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Vikalp Electric & Refrigeration - #1 AC & Appliance Repair in Jamnagar",
     description: "Need AC repair in Jamnagar? We offer fast, affordable & 24/7 service for all AC brands. Call now!",
+    images: ['/img/hero-image.jpg'], // Ensure this matches OpenGraph
   },
   robots: {
     index: true,
@@ -88,6 +97,15 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: "google78c03dc79be17898.html",
+  },
+  other: {
+    "geo.region": "IN-GJ",
+    "geo.placename": "Jamnagar",
+    "geo.position": "22.449979121209434, 70.04288198181385",
+    "ICBM": "22.4707, 70.0577"
+  }
 };
 
 export default function RootLayout({

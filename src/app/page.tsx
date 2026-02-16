@@ -14,9 +14,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Vikalp Electric & Refrigeration",
-    "image": "https://vikalpelectronics.com/img/logo.png", // Ensure this exists or use a generic one
-    "@id": "https://vikalpelectronics.com",
-    "url": "https://vikalpelectronics.com",
+    "image": "https://vikalp-electronics.vercel.app/img/logo.png",
+    "@id": "https://vikalp-electronics.vercel.app",
+    "url": "https://vikalp-electronics.vercel.app",
     "telephone": "+919374170929",
     "address": {
       "@type": "PostalAddress",

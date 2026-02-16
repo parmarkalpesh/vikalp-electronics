@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Washing Machine Repair in Jamnagar | Top Rated Service Center",
     description: "Top-rated washing machine repair in Jamnagar. We fix drum issues, water leakage, error codes, and PCB problems. All brands serviced. Same day visit.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/washing-machine-repair-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/washing-machine-repair-jamnagar",
     },
 };
 
@@ -43,7 +43,7 @@ export default function WashingMachineRepairPage() {
                     "@type": "LocalBusiness",
                     "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
-                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "image": "https://vikalp-electronics.vercel.app/img/logo.png",
                     "priceRange": "₹₹"
                 },
                 "areaServed": {
@@ -64,19 +64,19 @@ export default function WashingMachineRepairPage() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://vikalpelectronics.com"
+                        "item": "https://vikalp-electronics.vercel.app"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://vikalpelectronics.com/services"
+                        "item": "https://vikalp-electronics.vercel.app/services"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Washing Machine Repair Jamnagar",
-                        "item": "https://vikalpelectronics.com/services/washing-machine-repair-jamnagar"
+                        "item": "https://vikalp-electronics.vercel.app/services/washing-machine-repair-jamnagar"
                     }
                 ]
             },

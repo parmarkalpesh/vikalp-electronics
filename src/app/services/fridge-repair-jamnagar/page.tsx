@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best Fridge Repair in Jamnagar | Refrigerator Service Center",
     description: "Expert fridge repair service in Jamnagar. We repair Single Door, Double Door, and Side-by-Side refrigerators. Gas filling, compressor repair & 90-day warranty.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/fridge-repair-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/fridge-repair-jamnagar",
     },
 };
 
@@ -43,7 +43,7 @@ export default function FridgeRepairPage() {
                     "@type": "LocalBusiness",
                     "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
-                    "image": "https://vikalpelectronics.com/img/logo.png",
+                    "image": "https://vikalp-electronics.vercel.app/img/logo.png",
                     "priceRange": "₹₹"
                 },
                 "areaServed": {
@@ -64,19 +64,19 @@ export default function FridgeRepairPage() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://vikalpelectronics.com"
+                        "item": "https://vikalp-electronics.vercel.app"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://vikalpelectronics.com/services"
+                        "item": "https://vikalp-electronics.vercel.app/services"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Fridge Repair Jamnagar",
-                        "item": "https://vikalpelectronics.com/services/fridge-repair-jamnagar"
+                        "item": "https://vikalp-electronics.vercel.app/services/fridge-repair-jamnagar"
                     }
                 ]
             },

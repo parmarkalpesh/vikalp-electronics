@@ -58,7 +58,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3 text-gray-400">
                                 <FaEnvelope className="text-accent flex-shrink-0" />
-                                <a href="mailto:vikalpelectronicsofficial@gmail.com" className="hover:text-white transition-colors">vikalpelectronicsofficial@gmail.com</a>
+                                <a href="mailto:vikalpjamnagar@gmail.com" className="hover:text-white transition-colors">vikalpjamnagar@gmail.com</a>
                             </li>
                         </ul>
                     </div>

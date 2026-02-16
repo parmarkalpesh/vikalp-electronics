@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Best AC Repair Service in Jamnagar | AC Service Center Near Me",
     description: "Looking for best AC repair in Jamnagar? We fix cooling issues, gas leakage & breakdown. 90-day warranty, 15+ years exp. Split & Window AC specialist.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/services/ac-repair-jamnagar",
+        canonical: "https://vikalp-electronics.vercel.app/services/ac-repair-jamnagar",
     },
 };
 
@@ -44,7 +44,7 @@ export default function ACRepairPage() {
                     "name": "Vikalp Electric & Refrigeration",
                     "telephone": "+919374170929",
                     "priceRange": "₹₹",
-                    "image": "https://vikalpelectronics.com/img/logo.png"
+                    "image": "https://vikalp-electronics.vercel.app/img/logo.png"
                 },
                 "areaServed": {
                     "@type": "City",
@@ -64,19 +64,19 @@ export default function ACRepairPage() {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://vikalpelectronics.com"
+                        "item": "https://vikalp-electronics.vercel.app"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://vikalpelectronics.com/services"
+                        "item": "https://vikalp-electronics.vercel.app/services"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "AC Repair Jamnagar",
-                        "item": "https://vikalpelectronics.com/services/ac-repair-jamnagar"
+                        "item": "https://vikalp-electronics.vercel.app/services/ac-repair-jamnagar"
                     }
                 ]
             },

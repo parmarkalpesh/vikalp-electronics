@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "Vikalp Electric & Refrigeration Blog | Home Appliance Maintenance Tips",
     description: "Read expert tips on maintaining your AC, fridge, and washing machine. Best advice from Jamnagar's top appliance technicians.",
     alternates: {
-        canonical: "https://vikalpelectronics.com/blog",
+        canonical: "https://vikalp-electronics.vercel.app/blog",
     },
 };
 
