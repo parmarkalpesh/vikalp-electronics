@@ -5,7 +5,7 @@ import Card from '../ui/Card';
 import Image from 'next/image';
 
 const products = [
-    { name: "AC Installation, Repair & Gas Charging", image: "/assets/Product1.jpg" },
+    { name: "AC Installation, Repair & Gas Charging", image: "/assets/product1.jpg" },
     { name: "Split AC / Window AC Service", image: "/assets/acservice.jpg" },
     { name: "Refrigerator & Double Door Fridge Repair", image: "/assets/Refrigerator.jpg" },
     { name: "Washing Machine (Semi / Fully Automatic)", image: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=2070&auto=format&fit=crop" },
@@ -14,9 +14,9 @@ const products = [
     { name: "Microwave Oven Repair", image: "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?q=80&w=2070&auto=format&fit=crop" },
     { name: "Geyser / Water Heater Service", image: "/assets/Gyser.jpg" },
     { name: "Inverter, UPS & Battery Service", image: "/assets/inveter.jpg" },
-    { name: "Solar Inverter Installation & Support", image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop" },
-    { name: "CCTV Camera Installation, Repair & AMC", image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop" },
-    { name: "DVR / NVR Setup & Configuration", image: "/assets/cctv.jpg" },
+    { name: "Solar Inverter Installation & Support", image: "/assets/solar.jpg" },
+    { name: "CCTV Camera Installation, Repair & AMC", image: "/assets/cctv.jpg" },
+    { name: "DVR / NVR Setup & Configuration", image: "/assets/NVR.jpg" },
     { name: "Home Electrical Wiring & Fault Repair", image: "/assets/wiring.jpg" },
     { name: "Kitchen Equipment Repair (Hotels & Canteens)", image: "/assets/hotel.jpg" },
     { name: "Commercial Display Chiller Service", image: "/assets/Glass open chiller.jpg" },

@@ -7,10 +7,15 @@ import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
     title: "Best AC Repair Service in Jamnagar | AC Service Center Near Me",
-    description: "Looking for best AC repair in Jamnagar? We fix cooling issues, gas leakage & breakdown. 90-day warranty, 15+ years exp. Split & Window AC specialist.",
+    description: "Looking for best AC repair in Jamnagar? We fix cooling issues, gas leakage & breakdown. 90-day warranty, 15+ years exp. Split & Window AC specialist. Call +919374170929.",
     alternates: {
         canonical: "https://vikalp-electronics.vercel.app/services/ac-repair-jamnagar",
     },
+    openGraph: {
+        title: "Best AC Repair Service in Jamnagar | Vikalp Electronics",
+        description: "Doorstep AC repair and gas charging in Jamnagar. Fast 2-hour technician arrival, genuine parts, and 90-day warranty.",
+        url: "https://vikalp-electronics.vercel.app/services/ac-repair-jamnagar",
+    }
 };
 
 export default function ACRepairPage() {

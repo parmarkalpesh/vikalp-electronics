@@ -6,11 +6,16 @@ import FAQ from "@/components/sections/FAQ";
 import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "CCTV Camera Installation in Jamnagar | Security Camera Service",
-    description: "Secure your home & business with Vikalp Electric & Refrigeration CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi Cameras. Mobile View setup.",
+    title: "Best CCTV Camera Installation in Jamnagar | Security Camera Service",
+    description: "Secure your home & business with Vikalp Electric & Refrigeration CCTV installation in Jamnagar. Hikvision, CP Plus, HD & WiFi IP Cameras with mobile view setup. Call +919374170929.",
     alternates: {
         canonical: "https://vikalp-electronics.vercel.app/services/cctv-installation-jamnagar",
     },
+    openGraph: {
+        title: "Best CCTV Camera Installation in Jamnagar | Vikalp Electronics",
+        description: "Professional CCTV camera installation, DVR setup & mobile monitoring in Jamnagar. Hikvision, CP Plus, Dahua.",
+        url: "https://vikalp-electronics.vercel.app/services/cctv-installation-jamnagar",
+    }
 };
 
 export default function CCTVPage() {

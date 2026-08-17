@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://vikalp-electronics.vercel.app'),
   title: {
     default: "Best AC Repair & Home Appliance Service in Jamnagar | Vikalp Electric & Refrigeration",
-    template: "%s | Best Service in Jamnagar - Vikalp Electric & Refrigeration",
+    template: "%s | Vikalp Electric & Refrigeration Jamnagar",
   },
-  description: "Looking for best AC service in Jamnagar? Vikalp Electric & Refrigeration offers 24/7 expert AC repair, gas charging, installation & servicing for Split/Window ACs of all brands. Call +919374170929.",
+  description: "Looking for best AC service in Jamnagar? Vikalp Electric & Refrigeration offers 24/7 expert AC repair, gas charging, installation, fridge & washing machine repair in Jamnagar. Call +919374170929.",
   keywords: [
     "AC service in Jamnagar",
     "Best AC repair Jamnagar",
@@ -47,11 +47,17 @@ export const metadata: Metadata = {
     "Best AC servicing deals in Jamnagar",
     "Home appliance repair Jamnagar",
     "Fridge repair near me",
+    "Fridge gas charging Jamnagar",
     "Washing machine service Jamnagar",
     "RO filter service Jamnagar",
-    "Vikalp Electric & Refrigeration"
+    "CCTV camera installation Jamnagar",
+    "Smart TV repair Jamnagar",
+    "Vikalp Electric & Refrigeration",
+    "Gokul Nagar Jamnagar electrician",
+    "Patel Colony AC repair",
+    "Digjam Circle AC technician"
   ],
-  authors: [{ name: "Vikalp Electric & Refrigeration" }],
+  authors: [{ name: "Vikalp Electric & Refrigeration", url: "https://vikalp-electronics.vercel.app" }],
   creator: "Vikalp Electric & Refrigeration",
   publisher: "Vikalp Electric & Refrigeration",
   formatDetection: {
@@ -59,32 +65,36 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: "https://vikalp-electronics.vercel.app",
+  },
   icons: {
     icon: '/img/logo.png',
     shortcut: '/img/logo.png',
     apple: '/img/logo.png',
   },
+  manifest: '/manifest.webmanifest',
   openGraph: {
     title: "Best AC & Home Appliance Repair in Jamnagar | Vikalp Electric & Refrigeration",
-    description: "Expert AC Repair, Gas Charging & Installation in Jamnagar. 24/7 Service for all brands. Call +919374170929 for same-day visit.",
+    description: "Expert AC Repair, Gas Charging, Installation, Fridge & Appliance Service in Jamnagar. 24/7 Doorstep Service for all brands. Call +919374170929.",
     url: 'https://vikalp-electronics.vercel.app',
     siteName: 'Vikalp Electric & Refrigeration',
     locale: 'en_IN',
     type: 'website',
     images: [
       {
-        url: '/img/hero-image.jpg', // Ensure this or a relevant image exists
+        url: '/img/aboutimg.jpg',
         width: 1200,
         height: 630,
-        alt: 'Vikalp Electric & Refrigeration Team',
+        alt: 'Vikalp Electric & Refrigeration - Top AC and Home Appliance Service Jamnagar',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Vikalp Electric & Refrigeration - #1 AC & Appliance Repair in Jamnagar",
-    description: "Need AC repair in Jamnagar? We offer fast, affordable & 24/7 service for all AC brands. Call now!",
-    images: ['/img/hero-image.jpg'], // Ensure this matches OpenGraph
+    description: "Need fast AC or appliance repair in Jamnagar? 90-day warranty, transparent pricing, 24/7 service. Call +919374170929.",
+    images: ['/img/aboutimg.jpg'],
   },
   robots: {
     index: true,
@@ -102,9 +112,9 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "IN-GJ",
-    "geo.placename": "Jamnagar",
-    "geo.position": "22.449979121209434, 70.04288198181385",
-    "ICBM": "22.4707, 70.0577"
+    "geo.placename": "Jamnagar, Gujarat, India",
+    "geo.position": "22.449979;70.042882",
+    "ICBM": "22.449979, 70.042882"
   }
 };
 
@@ -113,8 +123,95 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const globalSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HVACBusiness",
+        "@id": "https://vikalp-electronics.vercel.app/#business",
+        "name": "Vikalp Electric & Refrigeration",
+        "alternateName": "Vikalp Electronics Jamnagar",
+        "image": "https://vikalp-electronics.vercel.app/img/logo.png",
+        "logo": "https://vikalp-electronics.vercel.app/img/logo.png",
+        "url": "https://vikalp-electronics.vercel.app",
+        "telephone": "+919374170929",
+        "email": "vikalpjamnagar@gmail.com",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Credit Card, Debit Card, Net Banking",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop No. 1, Murlidhar Nagar 1, Gokul Nagar",
+          "addressLocality": "Jamnagar",
+          "addressRegion": "Gujarat",
+          "postalCode": "361004",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 22.449979,
+          "longitude": 70.042882
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday"],
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Jamnagar" },
+          { "@type": "AdministrativeArea", "name": "Gokul Nagar" },
+          { "@type": "AdministrativeArea", "name": "Patel Colony" },
+          { "@type": "AdministrativeArea", "name": "Digjam Circle" },
+          { "@type": "AdministrativeArea", "name": "Khodiyar Colony" },
+          { "@type": "AdministrativeArea", "name": "Saru Section" },
+          { "@type": "AdministrativeArea", "name": "Valkeshwari" },
+          { "@type": "AdministrativeArea", "name": "Bedeshwar" },
+          { "@type": "AdministrativeArea", "name": "Gulabnagar" },
+          { "@type": "AdministrativeArea", "name": "Reliance Greens Area" }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "248",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "sameAs": [
+          "https://facebook.com/vikalpelectronics",
+          "https://instagram.com/vikalpelectronics"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vikalp-electronics.vercel.app/#website",
+        "url": "https://vikalp-electronics.vercel.app",
+        "name": "Vikalp Electric & Refrigeration",
+        "description": "Best AC Repair, Gas Refill & Home Appliance Service in Jamnagar",
+        "publisher": {
+          "@id": "https://vikalp-electronics.vercel.app/#business"
+        },
+        "inLanguage": "en-IN"
+      }
+    ]
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${outfit.variable} antialiased bg-gray-50 text-secondary font-sans`}
       >
@@ -127,3 +224,4 @@ export default function RootLayout({
     </html>
   );
 }
+

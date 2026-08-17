@@ -7,10 +7,15 @@ import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
     title: "Best RO Service in Jamnagar | Water Purifier Repair & AMC",
-    description: "Pure drinking water solutions in Jamnagar. We repair Kent, Aquaguard, and all RO brands. Filter change, membrane replacement, and installation. Call now.",
+    description: "Pure drinking water solutions in Jamnagar. Repair Kent, Aquaguard, and all RO brands. Filter change, membrane replacement, and installation. Call +919374170929.",
     alternates: {
         canonical: "https://vikalp-electronics.vercel.app/services/ro-water-filter-service-jamnagar",
     },
+    openGraph: {
+        title: "Best RO Water Purifier Service in Jamnagar | Vikalp Electronics",
+        description: "Doorstep RO purifier installation, membrane change & filter service in Jamnagar. Kent, Aquaguard, Livpure.",
+        url: "https://vikalp-electronics.vercel.app/services/ro-water-filter-service-jamnagar",
+    }
 };
 
 export default function ROServicePage() {

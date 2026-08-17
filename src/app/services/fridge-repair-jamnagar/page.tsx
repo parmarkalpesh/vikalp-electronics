@@ -6,11 +6,16 @@ import FAQ from "@/components/sections/FAQ";
 import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
-    title: "Best Fridge Repair in Jamnagar | Refrigerator Service Center",
-    description: "Expert fridge repair service in Jamnagar. We repair Single Door, Double Door, and Side-by-Side refrigerators. Gas filling, compressor repair & 90-day warranty.",
+    title: "Best Fridge Repair in Jamnagar | Refrigerator Service Center Near Me",
+    description: "Expert fridge repair service in Jamnagar. Single Door, Double Door & Side-by-Side refrigerators. Gas filling (R134a/R600a), compressor repair & 90-day warranty. Call +919374170929.",
     alternates: {
         canonical: "https://vikalp-electronics.vercel.app/services/fridge-repair-jamnagar",
     },
+    openGraph: {
+        title: "Best Fridge Repair Service in Jamnagar | Vikalp Electronics",
+        description: "Doorstep refrigerator repair and gas charging in Jamnagar. Certified technicians for LG, Samsung, Whirlpool, and Godrej.",
+        url: "https://vikalp-electronics.vercel.app/services/fridge-repair-jamnagar",
+    }
 };
 
 export default function FridgeRepairPage() {

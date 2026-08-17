@@ -7,10 +7,15 @@ import RelatedServices from "@/components/sections/RelatedServices";
 
 export const metadata: Metadata = {
     title: "Best Washing Machine Repair in Jamnagar | Top Rated Service Center",
-    description: "Top-rated washing machine repair in Jamnagar. We fix drum issues, water leakage, error codes, and PCB problems. All brands serviced. Same day visit.",
+    description: "Top-rated washing machine repair in Jamnagar. Fix drum issues, water leakage, spin error codes & PCB problems. IFB, LG, Samsung, Whirlpool, Bosch. Call +919374170929.",
     alternates: {
         canonical: "https://vikalp-electronics.vercel.app/services/washing-machine-repair-jamnagar",
     },
+    openGraph: {
+        title: "Best Washing Machine Repair Service in Jamnagar | Vikalp Electronics",
+        description: "Doorstep washing machine repair in Jamnagar. Certified engineers, genuine spare parts, and 90-day warranty.",
+        url: "https://vikalp-electronics.vercel.app/services/washing-machine-repair-jamnagar",
+    }
 };
 
 export default function WashingMachineRepairPage() {
