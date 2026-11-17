@@ -1,0 +1,25 @@
+{
+  "name": "Vikalp Electric & Refrigeration",
+  "short_name": "Vikalp",
+  "description": "AC repair, refrigerator, washing machine and electrical services in Jamnagar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfaf9",
+  "theme_color": "#2e2757",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/vikalp-logo.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/vikalp-logo-144.webp",
+      "sizes": "144x144",
+      "type": "image/webp"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "en-IN"
+}
